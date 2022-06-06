@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivify Blog</title>
-    <link href="styles1\styles.css" rel="stylesheet">
+    <link href="styles\styles.css" rel="stylesheet">
 
 </head>
 <body>

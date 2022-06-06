@@ -4,7 +4,7 @@
 
  @media (min-width: 48em) {
     html {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -28,7 +28,7 @@ h6,
 .h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    color: #333;
+    color:  #b34848;
 }
 
 
@@ -47,7 +47,7 @@ h6,
 
 .blog-masthead {
     margin-bottom: 3rem;
-    background-color: #428bca;
+    background-color: #b34848;
     box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
 
@@ -145,13 +145,18 @@ h6,
 .blog-post {
     margin-bottom: 4rem;
 }
-.blog-post-title {
+.blog-post-title a {
     margin-bottom: .25rem;
     font-size: 2.5rem;
+    color: #b34848;
 }
 .blog-post-meta {
     margin-bottom: 1.25rem;
     color: #999;
+}
+
+.blog-post-title a:hover  {
+    text-decoration: underline;
 }
 
 
