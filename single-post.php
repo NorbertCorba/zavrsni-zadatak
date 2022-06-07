@@ -8,7 +8,10 @@
     $sql = "SELECT * FROM posts WHERE id = '$postId'";
 
     $singlePost = fetch($sql, $connection);
-   
+
+    $sql2 = "SELECT * FROM comments WHERE post_id = '$postId'";
+    $comments = fetch($sql2, $connection, true);
+
   }
 ?>
 
@@ -26,8 +29,22 @@
     <div class="blog-post">
     
             <h2 class="blog-post-title"><?php echo ($singlePost['title'])?></h2>
-            <p class="blog-post-meta">Created at: <?php echo($singlePost['created_at'])?> by <a href="#"></a><?php echo($singlePost['author'])?></p>
-            <p><?php echo ($singlePost['body']) ?></p>
+            <p class="blog-post-meta">Created on: <?php echo($singlePost['created_at'])?> by <a href="#"></a><?php echo($singlePost['author'])?></p>
+            <h3>Post content:</h3>
+            <p class ="post-body"><?php echo ($singlePost['body']) ?></p>
+
+            <h3>Comments:</h3><br><br>
+
+<?php foreach ($comments as $comment) {
+  ?>
+        <ul>
+            <li><h4><br><?php echo ($comment['author']) ?>  wrote:<br></h4></li>
+            <p> <?php echo ($comment['text']) ?></p>
+            <hr>
+        </ul>
+
+<?php }?>
+
            
     </div><!-- /.blog-post -->
 
