@@ -20,6 +20,11 @@
     <link href="styles\styles.css" rel="stylesheet">
 </head>
 
+<body>
+<?php include('header.php') ?>
+
+
+
 <main role="main" class="container">
 
     <div class="row">
@@ -54,10 +59,11 @@
 ?>
 
         </div><!-- /.blog-main -->
-        
+        <?php include('sidebar.php') ?>
      </div><!-- /.row -->
 
 </main><!-- /.container --> 
+<?php include('footer.php') ?>
 
 </body>
 
