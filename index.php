@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include_once('db.php') ?>
 <?php include('header.php') ?>
 
 <head>
@@ -12,11 +13,13 @@
 </head>
 <body>
 
-<?php include('posts.php'); ?>
 
-<?php include('sidebar.php'); ?>
 
-<?php include('footer.php'); ?>
+<?php include('posts.php') ?>
+
+<?php include('sidebar.php') ?>
+
+<?php include('footer.php') ?>
 
 </body>
 </html>
