@@ -30,7 +30,7 @@
     <div class="row">
 
     <?php
-    
+
     $sql = "SELECT * FROM posts ORDER BY created_at DESC";
 
     $posts = fetch($sql, $connection, true);
